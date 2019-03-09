@@ -1,4 +1,4 @@
-FROM trzeci/emscripten as builder
+FROM trzeci/emscripten:sdk-tag-1.38.13-64bit as builder
 
 RUN git clone https://github.com/TorchCraft/TorchCraftAI.git \
 	&& cd TorchCraftAI/3rdparty/openbw \
